@@ -13,8 +13,8 @@
     (in worker)
 
 
-#How use it :
-
+#How use it : 2 ways :
+1
      
             avi(this.files[0], function(err, info) {
                 if (err) {
@@ -25,7 +25,8 @@
                 }
             }); 
 
-    because there are two ways for calculate the sizes of each stream, there is a masked option :
+2
+  -------------------------------------------------------------------------------------
 
      
             avi(this.files[0], withmovis, function(err, info) {
