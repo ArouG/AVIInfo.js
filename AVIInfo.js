@@ -79,7 +79,6 @@ var avi = function(opts, withmovis, cb) {
                 return Math.min.apply(null, this);
             }
             ***********************************************************************************************/
-            var moovatom;
             var xTagsAudio =   {
                     '0' :['Unknown,,,'],
                     '1' :['PCM,PCM,Microsoft PCM,http://www.microsoft.com/windows/'],
@@ -1415,11 +1414,11 @@ var avi = function(opts, withmovis, cb) {
 
 
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = mp4;
+    module.exports = avi;
 } else {
     if (typeof define === 'function' && define.amd) {
-        define('mp4', [], function() {
-            return mp4;
+        define('avi', [], function() {
+            return avi;
         });
     } 
 };
