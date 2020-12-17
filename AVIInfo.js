@@ -791,7 +791,10 @@ var avi = function(opts, withmovis, cb) {
                             obj.nAvgBytesPerSec = buff.getUint32(8, true);      // for buffer estimation
                             obj.nBlockAlign = buff.getUint16(12, true);         // block size of data
                             obj.wBitsPerSample = buff.getUint16(14, true);      // Number of bits per sample of mono data
-                            obj.cbSize = buff.getUint16(16, true);              // The count in bytes of the size of extra information (after cbSize) 
+                            // We don't need - for this purpose of cdSize :-))
+                            //if (buff.byteLength > 16){
+                            //    obj.cbSize = buff.getUint16(16, true);          // The count in bytes of the size of extra information (after cbSize) 
+                            //}
                             /***************************************** end of WAVEFORMATEX *********************************************************/
                             /*    don't bother of the rest if exists !  If cbSize>0 some more precisions for audio stream                          */ 
                         }  
