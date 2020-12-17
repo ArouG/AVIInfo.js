@@ -51,3 +51,5 @@
 
 #Try it ? 
     http://aroug.eu/AVIInfo/   (multiple + worker)  
+    
+#PS : AVI files should have troubles (http://www.virtualdub.org/blog/pivot/entry.php?id=25  (common problems in 'bad AVI files')) In these cases, you should use some tool to repair it. I use AviDemux (https://fr.wikipedia.org/wiki/Avidemux) ;-) 
