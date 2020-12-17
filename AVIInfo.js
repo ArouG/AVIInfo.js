@@ -9,6 +9,7 @@
  *              https://www.opennet.ru/docs/formats/avi.txt
  *              https://msdn.microsoft.com/fr-fr/library/windows/desktop/dd390970%28v=vs.85%29.aspx
  *              https://msdn.microsoft.com/en-us/library/windows/desktop/dd317599%28v=vs.85%29.aspx
+ *              http://www.virtualdub.org/blog/pivot/entry.php?id=25  (common problems in 'bad AVI files')
  */
 "use strict";
 
@@ -844,7 +845,6 @@ var avi = function(opts, withmovis, cb) {
                         if ((obj.Typet == 'vids') && (!info.dureeS)){
                             info.dureeS = obj.dwLength * obj.dwScale / obj.dwRate;
                         }
-                        info
                         if (ind < info.tracks.length - 1){
                             ind += 1;
                             parsestrh(ind, atoms, cb);
